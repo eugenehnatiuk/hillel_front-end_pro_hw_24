@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+picture {
+  display: inline-block;
+}
+
+body {
+  background: url("../images/background_main.png") center/cover no-repeat fixed;
+}
+
+.wrapper {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.input-box {
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 252, 252, 0.5);
+  border-radius: 6px;
+  overflow: auto;
+  min-width: 250px;
+}
+.input-box__textarea {
+  margin: 0 auto;
+  text-align: center;
+}
+.input-box__textarea label {
+  display: block;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.input-box__textarea textarea {
+  height: 250px;
+  resize: none;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+}
+.input-box__btn {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: green;
+  color: white;
+  cursor: pointer;
+  margin: 0 0 20px;
+  display: inline-block;
+}
+@media screen and (min-width: 1440px) {
+  .input-box {
+    width: 70%;
+  }
+}
+.input-box__output {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+}
+.input-box__output > p {
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+.input-box__output-count > p {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+.input-box__output-count > ul li, .input-box__output-count > ul p {
+  margin: 0 0 10px 0;
+}
+.input-box__output-count > ul li {
+  font-size: 1rem;
+}
+.input-box__output-count > ul p {
+  font-weight: 700;
+}
+.input-box__output-count span {
+  display: block;
+  font-weight: 700;
+  color: red;
+  margin: 0 0 10px;
+}
+.input-box__output-list {
+  overflow: auto;
+  min-height: 200px;
+  max-height: 380px;
+}
+
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 708px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 964px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1760px;
+  }
+}/*# sourceMappingURL=style.css.map */

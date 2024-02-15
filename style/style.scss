@@ -1,0 +1,132 @@
+@import 'fonts';
+@import 'reset';
+@import 'vars';
+
+body {
+  background: url('../images/background_main.png') center / cover no-repeat fixed;
+  // height: 100vh;
+}
+
+.wrapper {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: 400;
+  
+ }
+
+.input-box {
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  // height: 100vh;
+  background: rgba(255, 252, 252, 0.5);
+  border-radius: 6px;
+  overflow: auto;
+  min-width: 250px;
+
+  &__textarea {
+    margin: 0 auto;
+    text-align: center;
+    label {
+      display: block;
+      margin: 0 0 20px 0;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      height: 250px;
+      resize: none;
+      padding: 10px;
+      width: 80%;
+      border: 1px solid black;
+      border-radius: 6px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__btn {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: green;
+    color: white;
+    cursor: pointer;
+    margin: 0 0 20px;
+    display: inline-block;
+  }
+
+  @include viewport-xl {
+    width: 70%;
+  }
+
+  &__output {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+   
+    & > p {
+      text-align: center;
+      font-weight: 700;
+      margin: 0 0 25px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__output-count {
+    & > p {
+      margin: 0 0 10px 0;
+      font-weight: 700;
+    }
+    & > ul li,
+    & > ul p {
+      margin: 0 0 10px 0;
+    }
+    & > ul li {
+      font-size: 1rem;
+    }
+    & > ul p {
+      font-weight: 700;
+    }
+    & span {
+      display: block;
+      font-weight: 700;
+      color: red;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__output-list {
+    overflow: auto;
+    min-height: 200px;
+    max-height: 380px;
+  }
+}
+
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+  // min-width: 250px;
+
+  // від 0 до бескінечності
+
+  @include viewport-md {
+    // від 768 >
+    max-width: 708px;
+  }
+
+  @include viewport-lg {
+    // від 1024 >
+    max-width: 964px;
+  }
+
+  @include viewport-xl {
+    // від 1440 >
+    max-width: 1380px;
+  }
+
+  @include viewport-xll {
+    max-width: 1760px;
+  }
+}
