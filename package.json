@@ -1,0 +1,35 @@
+{
+  "name": "count_words_in_text",
+  "version": "1.0.0",
+  "description": "count words at button click",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenehnatiuk/hillel_front-end_pro_hw_24.git"
+  },
+  "keywords": [
+    "count",
+    "words"
+  ],
+  "author": "joaquin_solo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugenehnatiuk/hillel_front-end_pro_hw_24/issues"
+  },
+  "homepage": "https://github.com/eugenehnatiuk/hillel_front-end_pro_hw_24#readme",
+  "dependencies": {
+    "@fastify/static": "^7.0.1",
+    "fastify": "^4.26.1",
+    "path": "^0.12.7",
+    "url": "^0.11.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9"
+  }
+}
